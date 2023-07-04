@@ -56,7 +56,7 @@ function totalDeAlambre(){
 /**
  * 2) Funcion para calcular el total del precio
  */
-function totalGastado(total){
+function totalGastado(t){
     //devuelve el diametro del motor
     let diametro = document.getElementById('diametro').value
 
