@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Bobinado Enrique</h1>
+    </header>
+    <main>
+        <form action="">
+            <div>
+                <h3>Diametro</h3>
+                <select name="diametro" id="diametro">
+                    <option value="0.5">0.5</option>
+                    <option value="0.6">0.6</option>
+                    <option value="0.7">0.7</option>
+                    <option value="0.8">0.8</option>
+                </select>
+            </div>
+
+            <div>
+                <h3>Tipo de motor</h3>
+                <label for="monofasico">Monofasico</label>
+                <input type="radio" name="tipo" id="monofasico" value="monofasico" checked>
+                <label for="trifasico">Trifasico</label>
+                <input type="radio" name="tipo" id="trifasico" value="trifasico">
+            </div>
+
+            <div>
+                <h3>Cantidad de ranuras</h3>
+                <input type="number" name="ranuras" id="ranuras">
+            </div>
+
+            <div>
+                <h3>Largo de nucleo</h3>
+                <input type="number" name="nucleo" id="nucleo"> <span>Cm</span>
+            </div>
+
+            <div class="container_vueltas">
+                <h3>Cantidad de vueltas</h3>
+                <h4>Fase 1<h4>
+                <input type='number' name='fase[]'>
+            </div>
+
+            <div>
+                <input type="button" value="Calcular" id="calcular">
+            </div>
+
+        </form>
+
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="">Cursos</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">Locales</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+    </main>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
